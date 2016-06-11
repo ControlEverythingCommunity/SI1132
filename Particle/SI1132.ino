@@ -11,7 +11,7 @@
 #define Addr 0x60
 
 float visible = 0.0, ir = 0.0, uv = 0.0;
-int status = 0;
+int response = 0;
 
 void setup()
 {
