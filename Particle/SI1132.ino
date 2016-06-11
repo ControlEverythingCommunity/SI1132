@@ -389,5 +389,3 @@ void loop()
   Particle.publish("UV Of the Source : ", String(uv));
   delay(1000);
 }
-
-
