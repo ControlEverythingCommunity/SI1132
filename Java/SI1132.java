@@ -1,3 +1,10 @@
+
+// Distributed with a free-will license.
+// Use it any way you want, profit or free, provided it fits in the licenses of its associated works.
+// SI1132
+// This code is designed to work with the SI1132_I2CS I2C Mini Module available from ControlEverything.com.
+// https://www.controleverything.com/content/Light?sku=SI1132_I2CS#tabs-0-product_tabset-2
+
 import com.pi4j.io.i2c.I2CBus;
 import com.pi4j.io.i2c.I2CDevice;
 import com.pi4j.io.i2c.I2CFactory;
@@ -27,7 +34,7 @@ public class SI1132
 		Thread.sleep(10);
 		// Select PARAM_RD register
 		// Read 1 byte of data
-		byte status = (byte)device.read(0x2E);
+		byte response = (byte)device.read(0x2E);
 		
 		// Select INT Output Enable register
 		// INT pin driven low
@@ -50,7 +57,7 @@ public class SI1132
 		Thread.sleep(10);
 		// Select PARAM_RD register
 		// Read 1 byte of data
-		status = (byte)device.read(0x2E);
+		response = (byte)device.read(0x2E);
 		
 		// Select PARAM_WR register
 		// Set ADC Clock divided / 1
@@ -61,7 +68,7 @@ public class SI1132
 		Thread.sleep(10);
 		// Select PARAM_RD register
 		// Read 1 byte of data
-		status = (byte)device.read(0x2E);
+		response = (byte)device.read(0x2E);
 		
 		// Select PARAM_WR register
 		// Set 511 ADC Clock
@@ -72,7 +79,7 @@ public class SI1132
 		Thread.sleep(10);
 		// Select PARAM_RD register
 		// Read 1 byte of data
-		status = (byte)device.read(0x2E);
+		response = (byte)device.read(0x2E);
 		
 		// Select PARAM_WR register
 		// Set ADC Clock divided / 1
@@ -83,7 +90,7 @@ public class SI1132
 		Thread.sleep(10);
 		// Select PARAM_RD register
 		// Read 1 byte of data
-		status = (byte)device.read(0x2E);
+		response = (byte)device.read(0x2E);
 		
 		// Select PARAM_WR register
 		// High Signal Range
@@ -94,7 +101,7 @@ public class SI1132
 		Thread.sleep(10);
 		// Select PARAM_RD register
 		// Read 1 byte of data
-		status = (byte)device.read(0x2E);
+		response = (byte)device.read(0x2E);
 		
 		// Select PARAM_WR register
 		// Set 511 ADC Clock
@@ -105,7 +112,7 @@ public class SI1132
 		Thread.sleep(10);
 		// Select PARAM_RD register
 		// Read 1 byte of data
-		status = (byte)device.read(0x2E);
+		response = (byte)device.read(0x2E);
 		
 		// Select PARAM_WR register
 		// High Signal Range
@@ -116,7 +123,7 @@ public class SI1132
 		Thread.sleep(10);
 		// Select PARAM_RD register
 		// Read 1 byte of data
-		status = (byte)device.read(0x2E);
+		response = (byte)device.read(0x2E);
 		
 		// Select COMMAND register
 		// Start ALS conversion
