@@ -26,7 +26,7 @@ bus.write_byte_data(0x60, 0x18, (0x01 | 0xA0))
 time.sleep(0.01)
 # SI1132 address, 0x60(96)
 # Read data back from 0x2E(46), 1 byte
-status = bus.read_byte_data(0x60, 0x2E)
+response = bus.read_byte_data(0x60, 0x2E)
 
 # SI1132 address, 0x60(96)
 # Select INT Output Enable register, 0x03(03)
@@ -52,7 +52,7 @@ bus.write_byte_data(0x60, 0x18, (0x0E | 0xA0))
 time.sleep(0.01)
 # SI1132 address, 0x60(96)
 # Read data back from 0x2E(46), 1 byte
-status = bus.read_byte_data(0x60, 0x2E)
+response = bus.read_byte_data(0x60, 0x2E)
 
 # SI1132 address, 0x60(96)
 # Select PARAM_WR register, 0x17(23)
@@ -65,7 +65,7 @@ bus.write_byte_data(0x60, 0x18, (0x1E | 0xA0))
 time.sleep(0.01)
 # SI1132 address, 0x60(96)
 # Read data back from 0x2E(46), 1 byte
-status = bus.read_byte_data(0x60, 0x2E)
+response = bus.read_byte_data(0x60, 0x2E)
 
 # SI1132 address, 0x60(96)
 # Select PARAM_WR register, 0x17(23)
@@ -78,7 +78,7 @@ bus.write_byte_data(0x60, 0x18, (0x1D | 0xA0))
 time.sleep(0.01)
 # SI1132 address, 0x60(96)
 # Read data back from 0x2E(46), 1 byte
-status = bus.read_byte_data(0x60, 0x2E)
+response = bus.read_byte_data(0x60, 0x2E)
 
 # SI1132 address, 0x60(96)
 # Select PARAM_WR register, 0x17(23)
@@ -91,7 +91,7 @@ bus.write_byte_data(0x60, 0x18, (0x11 | 0xA0))
 time.sleep(0.01)
 # SI1132 address, 0x60(96)
 # Read data back from 0x2E(46), 1 byte
-status = bus.read_byte_data(0x60, 0x2E)
+response = bus.read_byte_data(0x60, 0x2E)
 
 # SI1132 address, 0x60(96)
 # Select PARAM_WR register, 0x17(23)
@@ -104,7 +104,7 @@ bus.write_byte_data(0x60, 0x18, (0x1F | 0xA0))
 time.sleep(0.01)
 # SI1132 address, 0x60(96)
 # Read data back from 0x2E(46), 1 byte
-status = bus.read_byte_data(0x60, 0x2E)
+response = bus.read_byte_data(0x60, 0x2E)
 
 # SI1132 address, 0x60(96)
 # Select PARAM_WR register, 0x17(23)
@@ -117,7 +117,7 @@ bus.write_byte_data(0x60, 0x18, (0x10 | 0xA0))
 time.sleep(0.01)
 # SI1132 address, 0x60(96)
 # Read data back from 0x2E(46), 1 byte
-status = bus.read_byte_data(0x60, 0x2E)
+response = bus.read_byte_data(0x60, 0x2E)
 
 # SI1132 address, 0x60(96)
 # Select PARAM_WR register, 0x17(23)
@@ -130,7 +130,7 @@ bus.write_byte_data(0x60, 0x18, (0x12 | 0xA0))
 time.sleep(0.01)
 # SI1132 address, 0x60(96)
 # Read data back from 0x2E(46), 1 byte
-status = bus.read_byte_data(0x60, 0x2E)
+response = bus.read_byte_data(0x60, 0x2E)
 
 # SI1132 address, 0x60(96)
 # Select PARAM_WR register, 0x17(23)
