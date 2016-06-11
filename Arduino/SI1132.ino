@@ -383,5 +383,3 @@ void loop()
   Serial.println(" lux");
   delay(500);
 }
-
-
