@@ -133,9 +133,9 @@ time.sleep(0.01)
 response = bus.read_byte_data(0x60, 0x2E)
 
 # SI1132 address, 0x60(96)
-# Select PARAM_WR register, 0x17(23)
+# Select COMMAND register, 0x18(24)
 #		0x0E(14)	Start ALS conversion
-bus.write_byte_data(0x60, 0x17, 0x0E)
+bus.write_byte_data(0x60, 0x18, 0x0E)
 time.sleep(0.5)
 
 # SI1132 address, 0x60(96)
