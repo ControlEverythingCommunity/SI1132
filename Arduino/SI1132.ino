@@ -171,7 +171,7 @@ void setup()
   Wire.beginTransmission(Addr);
   // Select COMMAND register
   Wire.write(0x18);
-  /// Select ALS_IR_ADC_COUNTER register in RAM
+  // Select ALS_IR_ADC_COUNTER register in RAM
   Wire.write(0x1D | 0xA0);
   // Stop I2C Transmission
   Wire.endTransmission();
