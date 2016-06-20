@@ -10,7 +10,7 @@
 // SI1132 I2C address is 0x60(96)
 #define Addr 0x60
 
-float visible = 0.0, ir = 0.0, uv = 0.0;
+double visible = 0.0, ir = 0.0, uv = 0.0;
 int response = 0;
 
 void setup()
@@ -383,9 +383,9 @@ void loop()
 
   // Output data to screen
   Particle.publish("Visible Light of Source : ", String(visible));
-  delay(100);
+  delay(1000);
   Particle.publish("IR Of Source : ", String(ir));
-  delay(100);
+  delay(1000);
   Particle.publish("UV Of the Source : ", String(uv));
   delay(1000);
 }
