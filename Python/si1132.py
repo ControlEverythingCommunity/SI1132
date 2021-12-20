@@ -1,11 +1,18 @@
 # Distributed with a free-will license.
 # Use it any way you want, profit or free, provided it fits in the licenses of its associated works.
-# SI1132
-# This code is designed to work with the SI1132_I2CS I2C Mini Module available from ControlEverything.com.
-# https://www.controleverything.com/content/Light?sku=SI1132_I2CS#tabs-0-product_tabset-2
+# si1132
+#This code is modified from https://github.com/ControlEverythingCommunity/SI1132 to work with micropython on
+#an ESP8266 microcontroller using emulated SMBus from https://github.com/gkluoe/micropython-smbus.
+#It is untested but should work on a variety of other platforms, provided a valid SMBus object is passed to it.
+#
+#Example:
+#>>>from machine import Pin
+#>>>from usmbus import SMBus
+#>>>from si1132 import SI1132 
+#>>>bus = SMBus(scl=Pin(5, Pin.IN),sda=Pin(4, Pin.IN))
+#>>>sensor = SI1132(smbus=bus)
+#>>>sensor.read()
 
-#import usmbus as smbus
-#import smbus
 import time
 from machine import Pin
 
